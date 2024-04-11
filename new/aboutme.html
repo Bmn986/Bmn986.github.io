@@ -7,8 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <title>Brandon Noey</title>
-    <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
-    <link rel="stylesheet" type="text/css" href="./port.css">
+    <link rel="stylesheet" type="text/css" href="./portfolio_website.css">
 </head>
 
 <!-- Body -->
@@ -25,7 +24,7 @@
         <!-- Onclick and ondblclick functions added to open and close the contact form -->
         <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
     </div>
-    <div id="About" style="padding: 20px; background-color: #f2f2f2;">
+    <div id="About" style="padding: 20px; background-color: #ffffe4">
         <h1>About Me</h1>
         <p>
             Hello! I’m Brandon Noey, a passionate individual on a transformative journey from grocery store manager to the exciting realm of cybersecurity. Here’s a glimpse into my story:
@@ -50,49 +49,39 @@
         <p>
             Whether you’re a fellow cybersecurity enthusiast, a mentor, or someone curious about this field, I’d love to connect. Feel free to reach out—I’m always up for a good tech chat!
         </p>
-        <a onclick="openForm()" class="contact">Contact</a>
+        
     </div>
-    <!-- Background video -->
-    <div id="Home">
-        <video autoplay muted loop id="Typing_Video">
-            <source src="images/video/Typing.mp4" type="video/mp4">
-            <!-- Display message if video fails to run -->
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-
-<!-- Contact form -->
-<div id="Contact">
-    <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-    <div class="form-popup" id="myForm" ondblclick="closeForm()">
-        <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
-            <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-            <h1>Contact</h1>
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Type your name here" name="name" required>
-            <label for="phone"><b>Phone</b></label>
-            <input type="text" placeholder="Type your phone number here" name="phone">
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Type your email address here" name="email" required>
-            <label for="message"><b>Message</b></label>
-            <input type="text" placeholder="Type your message here" name="message">
-
-            <button type="submit" class="btn">SUBMIT</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-        </form>
-    </div>
-</div>
-
-<!-- Footer section -->
-<footer>
-    <p class="center">Brnadon Noey <a href="mailto:Bmn986@gmail.com" target="_blank">Contact Me</a></p><br>
-    <p class="center">© 2021 Brandon Noey. All rights reserved.</p>
-</footer>
-<script src="./port.js"></script>
-</body>
-<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpsh' }, { 'server': 'a2plcpnl0622' }, { 'dcenter': 'a2' }, { 'cp_id': '5821630' }, { 'cp_cache': '' }, { 'cp_cl': '6' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
-<script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>
-
-</body>
-</html>
+    <!-- Contact form -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm" ondblclick="closeForm()">
+            <form action="https://formspree.io/f/xpzvjlnj" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
     
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer section -->
+    <footer>
+        <p class="center">Brnadon Noey <a href="mailto:Bmn986@gmail.com" target="_blank">Contact Me</a></p><br>
+        <p class="center">© 2021 Brandon Noey. All rights reserved.</p>
+    </footer>
+    <script src="./port.js"></script>
+    <script src="https://kit.fontawesome.com/d5684d772f.js" crossorigin="anonymous"></script>
+    </body>
+    
+    
+    
+    
+    </html>
