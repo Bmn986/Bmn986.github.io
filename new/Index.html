@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Brandon Noey</title>
+    <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+    <link rel="stylesheet" type="text/css" href="./portfolio_website.css">
+</head>
+
+<!-- Body -->
+
+<body class="Background">
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#GitHub">GitHub</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)"  class="dropbtn">About</a>
+            <div class="dropdown-content">
+                <a href="#">About Me</a>
+                <a href="#">Resume</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Background video -->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="../IMG/code_flythrough.mp4" type="video/mp4">
+            <!-- Display message if video fails to run -->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video text -->
+    <div class="Video_Text">
+        <h1 class="white-text">Brandon Noey's Portfolio</h1>
+        <strong>
+            <p class="center quote">
+                <q>“The wonderful thing about the Internet is that you’re connected to everyone else. 
+                    <br>The terrible thing about the Internet
+                    <br>is that you’re connected to everyone else.”
+                </q>
+                <br> -Vinton Cerf<br>
+                <br>
+                My name is Brandon Noey. Welcome to my portfolio website. On it, I will tell you about my background and
+                experience.
+                <br>
+                <br>Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+
+    <!-- Slideshow section added -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="../IMG/head_shot.jpg" alt="Headshot">
+                    <div class="text">I'm available to assist you on your project!</div>
+                </div>
+                <!-- Slide 2 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="../IMG/lakeview.jpg" alt="Lakeview">
+                    <div class="text">I am an aspiring SOC I analisys,<br> trained in:<br>HTML, CSS, JavaScript,
+                    </div>
+                </div>
+                <!-- Slide 3 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="../IMG/wedding.jpg" alt="Wedding Photo">
+                    <div class="text">My Wife and My Rock.</div>
+                </div>
+                <!-- Slide 4 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="../IMG/mom_dad.jpg" alt="Mom & Dad">
+                    <div class="text">Mom & Dad<br>Without them<br>None of this would have been possible.</div>
+                </div>
+                <!-- Slide 5 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="../IMG/mom_sis_kids.jpg" alt="Mom Sister & the Kids">
+                    <div class="text">My Loving family and Support system</div>
+                </div>
+                <!-- Slide 6 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="../IMG/Whole_Family.jpg" alt="Whole Family">
+                    <div class="text">The reason i get up and want to susceed everyday.</div>
+                </div>
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds a space between the slideshow images and the dots -->
+
+            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+            <div class="center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div class="Row" id="About">
+        <!-- Left column -->
+        <div class="Column_2">
+            <img src="../IMG/brain_growth.jpg" alt="Brain Growth">
+        </div>
+        <!-- Right column -->
+        <div class="Column_1">
+            <h3 class="center">Metamorphosis in Progress</h3>
+            <div>
+                <p class="center">
+                    This isn’t merely a career shift; it’s a metamorphosis. I’m decoding the enigma of ones and zeros, fortifying networks,
+                    and unraveling digital mysteries. The path ahead is both treacherous and exhilarating, but I stride forward with
+                    purpose.
+                    <br>
+                    <p class="center"><a href="./aboutme.html">Click Here to Read More</a></p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GitHub section -->
+    <div class="Row" id="GitHub">
+        <!-- Left column -->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>You can view my coding projects on my GitHub profile here:</p>
+            <p class="center"><a href="https://github.com/Bmn986/Tech-Academy-Projects" target="_blank" rel="noopener">Brnadon Noey's Github</a></p>
+        </div>
+        <!-- Right column -->
+        <div class="Column_2">
+            <a href="https://github.com/the-tech-academy" target="_blank" rel="noopener"></a>
+                <img src="../IMG/github.png" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact form -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm" ondblclick="closeForm()">
+            <form action="https://formspree.io/f/xpzvjlnj" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="center">Brnadon Noey <a href="mailto:Bmn986@gmail.com" target="_blank">Contact Me</a></p><br>
+        <p class="center">© 2021 Brandon Noey. All rights reserved.</p>
+    </footer>
+    <script src="./port.js"></script>
+    <script src="https://kit.fontawesome.com/d5684d772f.js" crossorigin="anonymous"></script>
+</body>
+
+
+
+
+</html>
