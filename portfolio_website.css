@@ -5,6 +5,16 @@ html {
     scroll-behavior: smooth;
     /*This ensures that the page scrolling is smooth when the buttons on the nav bar is clicked */
 }
+.element {
+    -webkit-user-select: none;
+    /* Safari 3.1+ */
+    -moz-user-select: none;
+    /* Firefox 2+ */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Standard syntax */
+}
 
 /* Body */
 body {
@@ -20,6 +30,7 @@ body {
     font-size: 1.5vw;
     overflow-x: hidden;
     /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
+    -webkit-user-select: none;
     user-select: none;
     /* This prevents the text on the webpage from being highlighted by the user */
 }
@@ -361,6 +372,7 @@ footer {
     font-size: 1.5vw;
     border-radius: 0 3px 3px 0;
     /* Adds a slightly rounded border on the top and bottom right corners */
+    -webkit-user-select: none;
     user-select: none;
     /* This property makes it so that the user cannot highlight the text */
     transition: 0.6s ease;
@@ -438,14 +450,24 @@ footer {
 
 /* Fading animation for slideshow */
 .fade {
-    animation-name: fade;
-    /* Fade animation is defined below */
-    animation-duration: 1.5s;
+    
+    -webkit-animation-name: fade;
+    /* This specifies the name of the animation */
+    -webkit-animation-duration: 1.5s;
     /* The animation lasts 1.5 seconds */
     -webkit-animation-name: fade;
-    /* Same as above for Safari 4.0-8.0 */
+    /* This specifies the name of the animation */
     -webkit-animation-duration: 1.5s;
+    /* The animation lasts 1.5 seconds */
+    -webkit-animation-name: fade;
+    animation-name: fade;    
+    /* This specifies the name of the animation */
+    animation-duration: 1.5s;
+    /* The animation lasts 1.5 seconds */
+    
 }
+
+    
 
 @-webkit-keyframes fade {
     from {
@@ -623,10 +645,10 @@ button:hover,
     /* This makes the text in the buttons white when hovered over */
     background-color: black;
     /* The background of the button changes to black when hovered over */
-    transition-duration: 1s;
-    /* This makes the transition last 1 second */
     -webkit-transition-duration: 1s;
     /* For Safari 4.0-8.0 */
+    transition-duration: 1s;
+    /* This makes the transition last 1 second */
     border-color: silver;
     /* The border turns silver when the button is hovered over */
 }
@@ -651,8 +673,8 @@ button:hover,
 .form-container .cancel:hover {
     color: white;
     background-color: #be7434;
-    transition-duration: 1s;
     -webkit-transition-duration: 1s;
+    transition-duration: 1s;
     border-color: black;
 }
 
