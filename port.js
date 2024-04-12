@@ -48,3 +48,4 @@ document.addEventListener("click", function(event){
 
 document.getElementById('Contact').addEventListener('click', openForm);
 document.getElementById('Contact').addEventListener('dblclick', closeForm);
+
