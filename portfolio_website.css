@@ -775,6 +775,30 @@ button:hover,
     }
 }
 
+@media screen and (max-width: 600px) {
+    /* CSS rules for screens less than 600px wide */
+}
+
+.Column_1,
+.Column_2 {
+    -webkit-animation: moveNavText 5.75s;
+    /* Safari and Chrome */
+    -moz-animation: moveNavText 5.75s;
+    /* Firefox */
+    -ms-animation: moveNavText 5.75s;
+    /* Internet Explorer */
+    -o-animation: moveNavText 5.75s;
+    /* Opera */
+    animation: moveNavText 5.75s;
+    /* Standard syntax */
+}
+
+.Column_1,
+.Column_2 {
+    will-change: transform, opacity;
+}
+
+
 /* style.css */
 .Column_1,
 .Column_2 {
