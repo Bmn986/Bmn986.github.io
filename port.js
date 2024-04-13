@@ -49,3 +49,19 @@ document.addEventListener("click", function(event){
 document.getElementById('Contact').addEventListener('click', openForm);
 document.getElementById('Contact').addEventListener('dblclick', closeForm);
 
+
+// port.js
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const targets = document.querySelectorAll('.Column_1, .Column_2');
+    targets.forEach(target => observer.observe(target));
+});
