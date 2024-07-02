@@ -277,37 +277,6 @@
 
     </div>
 
-<?php
-// Replace with your email address
-$recipient = 'bmn986@gmail.com';
-
-// Process form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-
-// Subject line (optional)
-$subject = 'Form Submission: ' . $name;
-
-// Email body
-$body = "Name: $name\n";
-$body .= "Email: $email\n\n";
-$body .= "Message:\n$message";
-
-// Set email headers (consult your email provider for specific requirements)
-$headers = "From: $email\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-// Send email
-if (mail($recipient, $subject, $body, $headers)) {
-  echo 'Your message has been sent successfully!';
-} else {
-  echo 'There was an error sending your message. Please try again later.';
-}
-
-
-
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
